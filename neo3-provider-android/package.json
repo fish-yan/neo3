@@ -1,0 +1,26 @@
+{
+  "name": "neo3-provider",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npx browserify index.js -t [ babelify --presets [ @babel/preset-env ] ] | uglifyjs > dist/n3-min.js",
+    "test": "npx browserify index.js -t [ babelify --presets [ @babel/preset-env ] ] | uglifyjs > dist/n3.js"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "dependencies": {
+    "@cityofzion/neon-core-neo3": "npm:@cityofzion/neon-core@^5.0.0-next.17",
+    "bignumber.js": "^9.1.0",
+    "@types/node": "^14.0.13"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.19.6",
+    "@babel/preset-env": "^7.19.4",
+    "babel-loader": "^8.2.5",
+    "babelify": "^10.0.0",
+    "browserify": "^17.0.0",
+    "eslint": "^8.7.0",
+    "uglify-js": "^3.15.0",
+    "webpack": "^5.74.0"
+  }
+}

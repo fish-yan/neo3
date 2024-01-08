@@ -1,0 +1,5 @@
+{
+  "mangle": {
+    "reserved": ["N3Web3Provider"]
+  }
+}
